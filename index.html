@@ -12,6 +12,10 @@
         <li ng-repeat="toDo in toDoList.toDos">
           {{ toDo.task }} : {{ toDo.completed ? 'complete' : 'not complete'}} </li>
       </ul>
+      <label>Task Name</label>
+      <input type="text" placeholder="ToDo" ng-model="taskName">
+
+      <button ng-click="toDoList.addToDo(taskName)">Add that shit</button>
       <h1>{{toDoList.todo}}</h1>
     </div>
   </body>

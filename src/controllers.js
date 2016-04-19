@@ -7,4 +7,8 @@ toDoApp.controller('toDoController', function() {
     {task: 'ToDo2', completed: false},
     {task: 'ToDo3', completed: true}
   ];
+
+  vm.addToDo = function(taskName) {
+    vm.toDos.push({ task: taskName, completed: false });
+  };
 });

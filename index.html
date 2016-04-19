@@ -8,8 +8,11 @@
   </head>
   <body>
     <div ng-controller="toDoController as toDoList">
+      <ul>
+        <li ng-repeat="toDo in toDoList.toDos">
+          {{ toDo.task }} : {{ toDo.completed ? 'complete' : 'not complete'}} </li>
+      </ul>
       <h1>{{toDoList.todo}}</h1>
     </div>
   </body>
 </html>
-
